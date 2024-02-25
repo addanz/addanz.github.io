@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Addan Zahra & Rojauhn Noble">
+    <!--
+    // Author            : Addan Zahra and Rojauhn Noble
+    // Student ID        : 100883421   ||  100849533
+    // Date of Completion: February 24, 2024
+    -->
+
+    <title>Harmony Hub</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body>
+
+<header></header>
+
+<section id="dynamic-background">
+    <div class="mySlides">
+        <img src="./images/community.jpg" alt="Slideshow Image of Community 1">
+    </div>
+
+    <div class="mySlides">
+        <img src="./images/community2.jpg" alt="Slideshow Image of Community 2">
+    </div>
+
+    <div class="mySlides">
+        <img src="./images/community3.jpg" alt="Slideshow Image of Community 3">
+    </div>
+</section>
+
+<div id="search-bar">
+    <!-- Search Bar -->
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchContent()"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+
+    <!-- Display Search Results -->
+    <div id="searchResults"></div>
+</div>
+
+
+<main id="welcome-text">
+    <h1>WELCOME TO HARMONY HUB!</h1><br>
+    <h2> Harmony Hub is a vibrant, community center that aims to offer a range of services and activities to
+        people of all ages and backgrounds. This is a place where technology meets community service, providing
+        resources like classes, events, workshops, and community projects.
+    </h2>
+</main>
+
+<br>
+<br>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./Script/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./Script/search.js"></script>
+
+</body>
+</html>

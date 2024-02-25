@@ -1,0 +1,257 @@
+body {
+    background-image: url('../images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#dynamic-background {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#dynamic-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0%, 20% {
+        opacity: 1;
+    }
+
+    25%, 45% {
+        opacity: 0;
+    }
+
+    50%, 70% {
+        opacity: 1;
+    }
+
+    75%, 95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#welcome-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+.project-card {
+    width: 450px;
+    height: 450px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#portfolio-text {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#services-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.service-tab {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-details {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#services-text {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border: 2px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#blog-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#blog-posts article .full-content {
+    display: none;
+}
+
+#blog-posts article.expanded .summary {
+    display: none;
+}
+
+#blog-posts article.expanded .full-content {
+    display: block;
+}
+
+#privacy-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#termsofservice-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#contact-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.container .col-6 {
+    height: 400px;
+}
+
+#careers-message-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#register-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#login-message-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#maps-message-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#events-message-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#gallery-message-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.date-box {
+    background-color: #72cff6;
+    color: #00408c;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    height: 220px;
+}
+
+#images-gallery {
+    text-align: center;
+    padding: 10px;
+}
+
+#search-bar {
+    text-align: center;
+    padding: 20px;
+}

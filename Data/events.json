@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "date": "2024-02-28",
+      "title": "Ice Cream Social",
+      "day": "Wednesday",
+      "time": "4:30 PM - 7:00 PM",
+      "location": "Durham College",
+      "description": "Imagine a delightful day full of smiles, laughter, and the delightful scent of just-scooped ice cream. Come unwind with us and your friends, family, and neighbours as we turn this into more than just an ordinary get-together. Our colourful ice cream truck will be parked and prepared to deliver a wide selection of mouthwatering flavours that are sure to please any sugar need. It caters to all tastes, be it traditional vanilla lovers or daring enough to try out unusual combos. In addition to being a culinary delight, this event offers a chance to deepen ties within the community. Most importantly, we'll pay for the ice cream! This is a kind way to share happiness and make enduring memories, so mark your calendars!"
+    },
+    {
+      "date": "2024-03-09",
+      "title": "Swimming Charity Event",
+      "day": "Saturday",
+      "time": "12:00 PM - 4:00 PM",
+      "location": "McLean Community Centre Pool",
+      "description": "Come explore the world of philanthropy with us at our next charity swimming event! Come experience a day full of generosity and goodwill splashes as we use the power of swimming to create positive change. This event is a chance for you to support a worthy cause, regardless of your level of swimming experience or just your love of the water. Supporting philanthropic causes, participants can swim laps, compete in friendly matches, and have a fun-filled day at the water. Together, let's make a splash, transforming every movement into an act of kindness for people in need. Come along with us as we transform the pool into a compassionate and community-focused space, spreading positive change wherever we go!"
+    },
+    {
+      "date": "2024-03-24",
+      "title": "Drive-in Movie Night",
+      "day": "Sunday",
+      "time": "8:00 PM - 11:00 PM",
+      "location": "Whitby Civic Park",
+      "description": "A great way to escape the stresses of everyday life is to prepare for the forthcoming drive-in movie night, where you may relax under the stars. This event offers a special and nostalgic way to watch a movie with family and friends while cozy in your own car. Laughter and special moments are the main attractions as the sun sets, creating a stunning outdoor movie experience. Drive-in movie night offers a pleasant diversion from life, enabling attendees to unwind, enjoy themselves, and share the delight of a good movie. So get ready for an evening full of cinematic enchantment and connection at the next drive-in movie night. Bring your favourite snacks and your loved ones!"
+    }
+  ]
+}

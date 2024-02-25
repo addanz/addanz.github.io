@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Addan Zahra & Rojauhn Noble">
+
+    <!--
+    // Author            : Addan Zahra and Rojauhn Noble
+    // Student ID        : 100883421   ||  100849533
+    // Date of Completion: February 24, 2024
+    -->
+
+    <title>Contact</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<body>
+
+<header></header>
+
+<section id="contact-text">
+    <h1>CONTACT US!</h1>
+    <p>
+        We appreciate your input and are available to help at all times. This is the area to contact us if you
+        need help, have questions about our services, <br>or just want to express your opinions and feedback.
+        Please feel free to express your questions, comments, or recommendations using the form below. <br>We value
+        your opinions and will make an effort to reply to all messages as soon as possible.
+        <br>You are required to leave your contact details and a member of our committed staff will get in touch
+        with you right away. <br>We appreciate your choice and eagerly await your feedback!
+    </p>
+</section>
+
+<br>
+<div class ="row justify-content-lg-center g-3"></div>
+
+    <form id="contactForm" class="col-lg-6 col-md-10 col-sm-10 mx-auto">
+
+        <div class="input-group mb-3">
+            <span class="input-group-text"> Full Name</span>
+            <input id="fullName" name="fullName" type="text" class="form-control" aria-describedby="Full Name"
+                   aria-label="Full Name Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text"> Email Address</span>
+            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                   aria-describedby="Email Address" aria-label="Email Address Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text"> Subject</span>
+            <input id="subject" name="subject" class="form-control"
+                   aria-describedby="Subject" aria-label="Subject Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text"> Feedback</span>
+            <input id="feedback" name="feedback" class="form-control"
+                   aria-describedby="Feedback Area" aria-label="Feedback Area Input">
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button id="sendButton" type="submit" class="btn btn-primary">
+                <i class="fa-regular fa-thumbs-up"></i> Submit
+            </button>
+
+            <button id="cancelButton" type="reset" class="btn btn-warning ms-2">
+                <i class="fa-regular fa-circle-xmark"></i> Cancel
+            </button>
+        </div>
+
+    </form>
+<br>
+
+<div id="thankYouMessage" class="text-center" style="display: none;">
+    <h2>Thank you for your submission!</h2>
+    <p>You will be redirected to the Home page in <span id="countdownTimer">5</span> seconds.</p>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./Script/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Handle the form submission using AJAX
+        $("#contactForm").submit(function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Get the form data
+            var formData = $(this).serialize();
+
+            // Simulate a successful submission (you can customize this part)
+            $("#thankYouMessage").show(); // Show the thank you message
+            $("#contactForm").hide(); // Hide the form
+        });
+    });
+</script>
+
+</body>
+</html>

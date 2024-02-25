@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="author" content="Addan Zahra & Rojauhn Noble">
+
+    <!--
+    // Author            : Addan Zahra and Rojauhn Noble
+    // Student ID        : 100883421   ||  100849533
+    // Date of Completion: February 24, 2024
+    -->
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+
+    <style>
+        /* Set a fixed height for the gallery images */
+        .gallery-image {
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover;
+            border: 1px solid #ddd; /* Add a border for better separation */
+            margin-bottom: 15px; /* Add some margin between images */
+        }
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<section id="gallery-message-text">
+    <h1>PHOTO GALLERY!</h1>
+    <p>Step into the captivating narrative of our community's vibrant history at our exclusive photo gallery,
+        where each frame <br>narrates the story of past events. From heartwarming ice cream socials to festive
+        gatherings, the gallery serves <br>as a visual chronicle, inviting everyone to relive the cherished moments
+        that have woven our community fabric together.</p>
+    <br>
+</section>
+
+<div id="images-gallery" class="row">
+    <div id="event-image1" class="col-md-4">
+        <a href="./images/morebball.jpg" data-lightbox="gallery" data-title="BasketBall Charity Event">
+            <img src="./images/morebball.jpg" class="img-fluid gallery-image" alt="BasketBall Charity Event">
+        </a>
+    </div>
+    <div id="event-image2" class="col-md-4">
+        <a href="./images/morebbq.jpg" data-lightbox="gallery" data-title="Community BBQ">
+            <img src="./images/morebbq.jpg" class="img-fluid gallery-image" alt="Community BBQ">
+        </a>
+    </div>
+    <div id="event-image3" class="col-md-4">
+        <a href="./images/morebbash.jpg" data-lightbox="gallery" data-title="Back-to-School Bash">
+            <img src="./images/morebbash.jpg" class="img-fluid gallery-image" alt="Back-to-School Bash">
+        </a>
+    </div>
+    <div id="event-image4" class="col-md-4">
+        <a href="./images/moretherapy.jpg" data-lightbox="gallery" data-title="Free Therapy Session">
+            <img src="./images/moretherapy.jpg" class="img-fluid gallery-image" alt="Free Therapy Session">
+        </a>
+    </div>
+    <div id="event-image5" class="col-md-4">
+        <a href="./images/morelounge.jpg" data-lightbox="gallery" data-title="Student Lounge">
+            <img src="./images/morelounge.jpg" class="img-fluid gallery-image" alt="Student Lounge">
+        </a>
+    </div>
+    <div id="event-image6" class="col-md-4">
+        <a href="./images/morelibrary.jpg" data-lightbox="gallery" data-title="Play-Area in Library">
+            <img src="./images/morelibrary.jpg" class="img-fluid gallery-image" alt="Play-Area in Library">
+        </a>
+    </div>
+    <div id="event-image7" class="col-md-4">
+        <a href="./images/moremovies.jpg" data-lightbox="gallery" data-title="Annual Drive-in Movie Night">
+            <img src="./images/moremovies.jpg" class="img-fluid gallery-image" alt="Annual Drive-in Movie Night">
+        </a>
+    </div>
+    <div id="event-image8" class="col-md-4">
+        <a href="./images/moreicecream.jpg" data-lightbox="gallery" data-title="Monthly Ice Cream Socials">
+            <img src="./images/moreicecream.jpg" class="img-fluid gallery-image" alt="Monthly Ice Cream Socials">
+        </a>
+    </div>
+    <div id="event-image9" class="col-md-4">
+        <a href="./images/morerun.jpg" data-lightbox="gallery" data-title="Running for Charity">
+            <img src="./images/morerun.jpg" class="img-fluid gallery-image" alt="Running for Charity">
+        </a>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./Script/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./dist/js/lightbox.min.js"></script>
+</body>
+</html>

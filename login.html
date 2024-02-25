@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="author" content="Addan Zahra & Rojauhn Noble">
+
+    <!--
+    // Author            : Addan Zahra and Rojauhn Noble
+    // Student ID        : 100883421   ||  100849533
+    // Date of Completion: February 24, 2024
+    -->
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body>
+
+<header></header>
+
+<section id="login-message-text" class="row">
+    <div class="offset-md-3 col-md-6 col-sm-12">
+        <div class="login" id="contentArea">
+            <br>
+            <h1>LOGIN!</h1>
+            <p>Welcome back! Please enter your account information below to proceed.</p>
+            <form id="loginForm" novalidate>
+
+                <div id="messageArea"></div>
+
+                <div class="form-group mb-2">
+                    <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="fa fa-user"></i>&nbsp;&nbsp;
+                          </span>
+                        <input type="text" class="form-control" id="emailAddress" name="emailAddress"  required
+                               value="" placeholder="Enter your email address">
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-2">
+                    <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="fa fa-lock"></i>&nbsp;&nbsp;
+                          </span>
+                        <input type="password" class="form-control" id="password" name="password"  required
+                               value="" placeholder="Enter your password">
+                    </div>
+                </div>
+                <br>
+
+                <div class="text-right">
+                    <button id="loginButton" type="button" class="btn btn-primary btn-lg">
+                        <i class="fas fa-sign-in-alt"> Login</i></button>
+                    <button id="cancelButton" type="button" class="btn btn-primary btn-lg">
+                        <i class="fas fa-undo"> Cancel</i>
+                    </button>
+                </div>
+            </form>
+
+            <br>
+
+        </div>
+        <p class="text-center text-muted small">
+            Don't have an account?
+            <a href="register.html">Register Here!</a>
+        </p>
+    </div>
+</section>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./Script/namespace.js"></script>
+<script src="./Script/user.js"></script>
+<script src="./Script/main.js"></script>
+
+
+</body>
+</html>
