@@ -1,0 +1,24 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Muhammad Yasir Patel",
+  "license": "MIT",
+  "script": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "fs-readfile-promise": "^3.0.1",
+    "jquery": "^3.7.1",
+    "mime-types": "^2.1.35",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^20.11.26"
+  }
+}
