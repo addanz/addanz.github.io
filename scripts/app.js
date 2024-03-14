@@ -67,7 +67,8 @@
         }
         $("#logout").on("click", function () {
             sessionStorage.clear();
-            $("#login").html(`<a class="nav-link" data="login"><i class="fas fa-sign-in-alt"></i> Login</a>`);
+            $("#login").html(`<a class="nav-link" href="#" data="login"><i class="fas fa-sign-in-alt"></i> Login</a>`);
+            LoadHeader();
             LoadLink("home");
         });
     }
@@ -228,8 +229,8 @@
                 console.log("test");
                 for (const user of data.users) {
                     console.log(user);
-                    let userName = document.forms[0].fullName.value;
-                    let password = document.forms[0].contactNumber.value;
+                    let userName = document.forms[0].userName.value;
+                    let password = document.forms[0].password.value;
                     if (userName === user.Username && password === user.Password) {
                         newUser.fromJson(user);
                         success = true;

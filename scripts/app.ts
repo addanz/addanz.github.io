@@ -117,18 +117,20 @@
         }
     }
 
-    function CheckLogin(){
-        if(sessionStorage.getItem("user")){
-            $("#login").html(`<a id="logout" class="nav-link" href="#"><i class="fas fa-undo"></i> Logout</a>`)
+    function CheckLogin() {
+        if (sessionStorage.getItem("user")) {
+            $("#login").html(`<a id="logout" class="nav-link" href="#"><i class="fas fa-undo"></i> Logout</a>`);
         }
 
-        $("#logout").on("click",function(){
-
+        $("#logout").on("click", function () {
             sessionStorage.clear();
-            $("#login").html(`<a class="nav-link" data="login"><i class="fas fa-sign-in-alt"></i> Login</a>`)
+            $("#login").html(`<a class="nav-link" href="#" data="login"><i class="fas fa-sign-in-alt"></i> Login</a>`);
+            LoadHeader();
             LoadLink("home");
         });
+
     }
+
 
     /**
      *
@@ -362,8 +364,8 @@
                for(const user of data.users){
                    console.log(user);
 
-                   let userName:string = document.forms[0].fullName.value;
-                   let password:string = document.forms[0].contactNumber.value;
+                   let userName:string = document.forms[0].userName.value;
+                   let password:string = document.forms[0].password.value;
 
 
                    if(userName === user.Username && password === user.Password){
