@@ -4,7 +4,7 @@
   "main": "server.js",
   "author": "Addan Zahra",
   "license": "MIT",
-  "script": {
+  "scripts": {
     "start": "node server.js"
   },
   "dependencies": {

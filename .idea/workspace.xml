@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ab2895c-6f9b-40a3-a812-12221aae1971" name="Changes" comment="commit&#10;updated&#10;update&#10;commit">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
+    <list default="true" id="9ab2895c-6f9b-40a3-a812-12221aae1971" name="Changes" comment="commit&#10;updated&#10;update&#10;commit&#10;commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.data.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.data.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/components/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/components/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +48,15 @@
       <updated>1710635202832</updated>
       <workItem from="1710635203920" duration="570000" />
     </task>
+    <task id="LOCAL-00001" summary="commit&#10;updated&#10;update&#10;commit&#10;commit">
+      <option name="closed" value="true" />
+      <created>1710636151203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710636151203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +82,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit&#10;updated&#10;update&#10;commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit&#10;updated&#10;update&#10;commit" />
+    <MESSAGE value="commit&#10;updated&#10;update&#10;commit&#10;commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit&#10;updated&#10;update&#10;commit&#10;commit" />
   </component>
 </project>
