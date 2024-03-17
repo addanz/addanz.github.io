@@ -12,6 +12,13 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
+"@types/fs-readfile-promise@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/fs-readfile-promise/-/fs-readfile-promise-3.0.4.tgz#4fdf4bc9317bb5b2e576872bf9f545b88cad0620"
+  integrity sha512-wr2nJWGi6+D0ofjS5bvr19HlwdCYE38+84Nf75Ojq6TBG07jNfb80NK7V7HAD/+BvBc83vJ04UCLxq42EcgF+A==
+  dependencies:
+    "@types/node" "*"
+
 "@types/jquery@^3.5.29":
   version "3.5.29"
   resolved "https://registry.npmjs.org/@types/jquery/-/jquery-3.5.29.tgz"
@@ -23,6 +30,13 @@
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@types/mime-types/-/mime-types-2.1.4.tgz#93a1933e24fed4fb9e4adc5963a63efcbb3317a2"
   integrity sha512-lfU4b34HOri+kAY5UheuFMWPDOI+OPceBSHZKp69gEyTL/mmJ4cnU6Y/rlme3UL3GyOn6Y42hyIEw0/q8sWx5w==
+
+"@types/node@*":
+  version "20.11.28"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.28.tgz#4fd5b2daff2e580c12316e457473d68f15ee6f66"
+  integrity sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/node@^20.11.26":
   version "20.11.26"
@@ -115,7 +129,7 @@ fill-range@^7.0.1:
 
 fs-readfile-promise@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.npmjs.org/fs-readfile-promise/-/fs-readfile-promise-3.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/fs-readfile-promise/-/fs-readfile-promise-3.0.1.tgz#d0d307b7f6aedfc920c31fa6e5712efaa297c958"
   integrity sha512-LsSxMeaJdYH27XrW7Dmq0Gx63mioULCRel63B5VeELYLavi1wF5s0XfsIdKDFdCL9hsfQ2qBvXJszQtQJ9h17A==
   dependencies:
     graceful-fs "^4.1.11"
@@ -173,7 +187,7 @@ is-number@^7.0.0:
 
 jquery@^3.7.1:
   version "3.7.1"
-  resolved "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
   integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
 
 lru-cache@^6.0.0:
@@ -209,7 +223,7 @@ ms@2.1.2:
 
 nodemon@^3.1.0:
   version "3.1.0"
-  resolved "https://registry.npmjs.org/nodemon/-/nodemon-3.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-3.1.0.tgz#ff7394f2450eb6a5e96fe4180acd5176b29799c9"
   integrity sha512-xqlktYlDMCepBJd43ZQhjWwMw2obW/JRvkrLxq5RCNcuDDX1DbcPT+qT1IlIIdf+DhnWs90JpTMe+Y5KxOchvA==
   dependencies:
     chokidar "^3.5.2"
