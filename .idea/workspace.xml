@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ab2895c-6f9b-40a3-a812-12221aae1971" name="Changes" comment="commit&#10;updated&#10;update&#10;commit&#10;commit">
+    <list default="true" id="9ab2895c-6f9b-40a3-a812-12221aae1971" name="Changes" comment="commit&#10;updated&#10;update&#10;commit&#10;commit&#10;committed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/server.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +64,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710636675552</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit&#10;updated&#10;update&#10;commit&#10;commit&#10;committed">
+      <option name="closed" value="true" />
+      <created>1710637897178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710637897178</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit&#10;updated&#10;update&#10;commit" />
     <MESSAGE value="commit&#10;updated&#10;update&#10;commit&#10;commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit&#10;updated&#10;update&#10;commit&#10;commit" />
+    <MESSAGE value="commit&#10;updated&#10;update&#10;commit&#10;commit&#10;committed" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit&#10;updated&#10;update&#10;commit&#10;commit&#10;committed" />
   </component>
 </project>
