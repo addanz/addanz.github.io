@@ -2,7 +2,7 @@
   "name": "week3",
   "version": "1.0.0",
   "main": "server.js",
-  "author": "Muhammad Yasir Patel",
+  "author": "Addan Zahra",
   "license": "MIT",
   "script": {
     "start": "node server.js"

@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac7ef47b-df11-4e5d-8669-fdc8d2bf2bf5" name="Changes" comment="" />
+    <list default="true" id="9ab2895c-6f9b-40a3-a812-12221aae1971" name="Changes" comment="commit&#10;updated&#10;update&#10;commit">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/components/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/components/header.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2dgtwX3iFIpGDx9ETBekYDKZQ0A" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2dnDyU96V1CT7mVGD8Sx6ps3Pvr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,20 +39,51 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ac7ef47b-df11-4e5d-8669-fdc8d2bf2bf5" name="Changes" comment="" />
-      <created>1710441788089</created>
+      <changelist id="9ab2895c-6f9b-40a3-a812-12221aae1971" name="Changes" comment="" />
+      <created>1710635202832</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710441788089</updated>
-      <workItem from="1710441789313" duration="2000" />
+      <updated>1710635202832</updated>
+      <workItem from="1710635203920" duration="570000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/authguard.js" />
+        <option value="$PROJECT_DIR$/scripts/authguard.js.map" />
+        <option value="$PROJECT_DIR$/scripts/namespace.js" />
+        <option value="$PROJECT_DIR$/scripts/namespace.js.map" />
+        <option value="$PROJECT_DIR$/scripts/user.js" />
+        <option value="$PROJECT_DIR$/scripts/user.js.map" />
+        <option value="$PROJECT_DIR$/scripts/app.js" />
+        <option value="$PROJECT_DIR$/scripts/app.js.map" />
+        <option value="$PROJECT_DIR$/scripts/router.js" />
+        <option value="$PROJECT_DIR$/scripts/router.js.map" />
+        <option value="$PROJECT_DIR$/scripts/contact.js" />
+        <option value="$PROJECT_DIR$/scripts/contact.js.map" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/server.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit&#10;updated&#10;update&#10;commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit&#10;updated&#10;update&#10;commit" />
   </component>
 </project>

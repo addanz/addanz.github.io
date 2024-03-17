@@ -1,27 +1,34 @@
 {
-  "users" :
-          [
-            {
-              "DisplayName" : "Bilbo Baggins",
-              "EmailAddress" : "bilbobaggin@example.com",
-              "Username" : "bbaggins",
-              "Password" : "12345"
-            },
-            {
-              "DisplayName" : "Samwise Gamgee",
-              "EmailAddress" : "sgamgee@example.com",
-              "Username" : "sgamgee",
-              "Password" : "789012"
-            },
-            {
-              "DisplayName" : "Admin",
-              "EmailAddress" : "admin@example.com",
-              "Username" : "admin",
-              "Password" : "555555"
-            }
 
+  "users":
+  [
 
-          ]
+    {
+      "DisplayName" : "Peter Parker",
+      "EmailAddress" : "peterparker@spiderman.com",
+      "Username" : "pparker",
+      "Password" : "12345"
+    },
 
+    {
+      "DisplayName" : "Bruce Wayne",
+      "EmailAddress" : "brucewayne@batman.com",
+      "Username" : "bwayne",
+      "Password" : "67890"
+    },
+    {
+      "DisplayName" : "Barry Allen",
+      "EmailAddress" : "barryallen@flash.com",
+      "Username" : "ballen",
+      "Password" : "15243"
+    },
+
+    {
+      "DisplayName" : "Admin",
+      "EmailAddress" : "admin@example.com",
+      "Username" : "admin",
+      "Password" : "00000"
+    }
+  ]
 
 }
