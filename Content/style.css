@@ -255,3 +255,28 @@ body {
     text-align: center;
     padding: 20px;
 }
+
+#event-planning-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#statistics-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#eventButton {
+    text-align: center;
+    padding: 10px;
+}
+
+#ideaButton {
+    text-align: center;
+    padding: 10px;
+}
+
+#statsticsImage {
+    text-align: center;
+    padding: 10px;
+}

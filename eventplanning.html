@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Addan Zahra & Rojauhn Noble">
+
+    <!--
+    // Author            : Addan Zahra and Rojauhn Noble
+    // Student ID        : 100883421   ||  100849533
+    // Date of Completion: February 24, 2024
+    -->
+
+    <title>Event Planning</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body>
+
+<header></header>
+
+<section id="event-planning-text">
+    <h1>EVENTS PLANNING!</h1>
+    <p>The Events Planning Page provides a central, interactive area where everyone can stay in touch and learn
+        about planned events and get-togethers, <br>which enhances the Harmony Hub's sense of community and belonging.
+        You will find a vibrant hub for Harmony community event organizing on this website. It functions as a <br>
+        dynamic platform that gives users easy access to plan, coordinate, and supervise a wide variety of
+        community events. This creative place encourages <br>individuals to collaborate, participate actively,
+        and engage with one another, enabling each person to add their own ideas and projects to the community
+        calendar. </p>
+    <br><br>
+    <h2>Please feel free to share any ideas you may have for future events in the form below: </h2>
+</section>
+
+<form id="ideas-form">
+    <div class="form-group">
+        <label for="dateSelection">Dates within the next week</label>
+        <select class="form-control" id="dateSelection">
+            <option>April 2nd, 2024</option>
+            <option>April 4th, 2024</option>
+            <option>April 5th, 2024</option>
+            <option>April 6th, 2024</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="eventIdeas">Event Ideas</label>
+        <textarea class="form-control" id="eventIdeas" rows="4"></textarea>
+    </div>
+    <div id ="ideaButton" class="text-right">
+        <button id="newIdea" type="button" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-plus"> Add Idea</i></button>
+    </div>
+</form>
+
+<br><br>
+
+<h2 align="center">Current Events: </h2>
+
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true" data-event-id="1">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Angelo's 12th Birthday</h5>
+            <small>3 days away</small>
+        </div>
+        <p class="mb-1">Birthday party to take place in Room.209 at 4:00 PM on Friday April 5th, 2024.</p>
+        <small>Room booked until 9:00 PM, need to send cleaners.</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" data-event-id="2">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Public Swimming Lessons</h5>
+            <small class="text-body-secondary">5 days away</small>
+        </div>
+        <p class="mb-1">Taking place in Pool B in South Wing from 7:00PM to 9:00 PM on Monday April 8th, 2024.</p>
+        <small class="text-body-secondary">Swimming gear and life jackets need to be taken out..</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" data-event-id="3">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Video Game Convention</h5>
+            <small class="text-body-secondary">6 days away</small>
+        </div>
+        <p class="mb-1">Located in C63 from 11:00AM to 4:00 PM on Wednesday April 10th, 2024.</p>
+        <small class="text-body-secondary">Need to do more marketing before the event.</small>
+    </a>
+</div>
+<div id ="eventButton" class="text-right">
+    <button id="addEvent" type="button" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-plus"> Add Event</i>
+    </button>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./Script/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('addEvent').addEventListener('click', addEvent);
+        // Delegate click events from the list-group to its child elements
+        document.querySelector('.list-group').addEventListener('click', function(e) {
+            // Check if the clicked element or its parent is a button
+            if (e.target.matches('.edit-event-btn, .edit-event-btn *')) {
+                // Edit event
+                editEvent(e.target.closest('[data-event-id]'));
+            } else if (e.target.matches('.delete-event-btn, .delete-event-btn *')) {
+                // Delete event
+                deleteEvent(e.target.closest('[data-event-id]'));
+            }
+        });
+    });
+
+    function addEvent() {
+        let eventName = prompt("Enter the event name:");
+        if (!eventName) return; // Exit if no name was entered
+        let eventId = Date.now();
+        let eventHtml = `
+    <a href="#" class="list-group-item list-group-item-action" data-event-id="${eventId}">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">${eventName}</h5>
+            <small>Just now</small>
+            <button class="btn btn-sm btn-outline-secondary edit-event-btn">Edit</button>
+            <button class="btn btn-sm btn-outline-danger delete-event-btn">Delete</button>
+        </div>
+    </a>`;
+        document.querySelector('.list-group').innerHTML += eventHtml;
+    }
+
+    function editEvent(eventElement) {
+        let currentName = eventElement.querySelector('h5').textContent;
+        let newName = prompt("Edit the event name:", currentName);
+        if (newName) {
+            eventElement.querySelector('h5').textContent = newName;
+        }
+    }
+
+    function deleteEvent(eventElement) {
+        if (confirm("Are you sure you want to delete this event?")) {
+            eventElement.remove();
+        }
+    }
+</script>
+
+
+</body>
+</html>
+

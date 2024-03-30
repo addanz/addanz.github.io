@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Addan Zahra & Rojauhn Noble">
+
+    <!--
+    // Author            : Addan Zahra and Rojauhn Noble
+    // Student ID        : 100883421   ||  100849533
+    // Date of Completion: February 24, 2024
+    -->
+
+    <title>Statistics</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body>
+
+<header></header>
+
+<section id="statistics-text">
+    <h1>STATISTICS PAGE!</h1>
+    <p>This is Harmony Hub's Statistics page which exists to provide interactive, visual
+        representations of Harmony Hub's <br>visitor statistics to enhance understanding and engagement. It serves the
+        purpose of enabling administrators and users like yourself <br>to grasp community engagement trends and site usage
+        effectively, fostering data-driven decisions and community insights.</p>
+    <br>
+
+    <div id="statsticsImage">
+        <img src="/images/statistics.png" alt="Chart 1">
+    </div>
+</section>
+
+<div class="chart-container">
+    <canvas id="visitorChart" style="width:100%;max-width:700px"></canvas>
+    <script>
+        const values = [
+            {"January": 200},
+            {"February": 300},
+            {"March": 400}
+        ]
+
+        const visitorChart = new Chart("visitorChart", {
+            type: "bar",
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Visitor Statistics',
+                    data: values,
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)', // Bar color
+                    borderColor: 'rgba(54, 162, 235, 1)', // Border color
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true // Start y-axis from zero
+                    }
+                }
+            }
+        });
+    </script>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./Script/main.js"></script>
+<script src="./Script/statistics.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
