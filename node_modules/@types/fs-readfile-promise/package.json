@@ -1,0 +1,27 @@
+{
+    "name": "@types/fs-readfile-promise",
+    "version": "3.0.4",
+    "description": "TypeScript definitions for fs-readfile-promise",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-readfile-promise",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Motosugi Murata",
+            "githubUsername": "mtsg",
+            "url": "https://github.com/mtsg"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/fs-readfile-promise"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/node": "*"
+    },
+    "typesPublisherContentHash": "1388f237d61c416026fdf4c059cc3fd2ac3a70e0fef12240524de8a4b3e72434",
+    "typeScriptVersion": "4.5"
+}
