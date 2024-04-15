@@ -280,3 +280,17 @@ body {
     text-align: center;
     padding: 10px;
 }
+
+#manager-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#managing-section {
+    text-align: center;
+    padding: 10px;
+}
+#posts-user-text {
+    text-align: center;
+    padding: 20px;
+}

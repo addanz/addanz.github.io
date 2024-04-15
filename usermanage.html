@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Content/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+
+</head>
+<body>
+<header></header>
+<section id="manager-text">
+    <h1>USER MANAGEMENT!</h1>
+    <p>
+        This page is managed by the user only and allows them to create new accounts,
+        login <br>into other members' accounts, update their profiles, and delete certain accounts as well.
+    </p>
+</section>
+
+    <!-- Registration Form -->
+    <h2>Register</h2>
+    <form id="registerForm">
+        Username: <input type="text" id="regUsername" required>
+        Email: <input type="email" id="regEmail" required>
+        Password: <input type="password" id="regPassword" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form id="loginForm">
+        Username: <input type="text" id="loginUsername" required>
+        Password: <input type="password" id="loginPassword" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Update Profile Form -->
+    <h2>Update Profile</h2>
+    <form id="updateForm">
+        Username: <input type="text" id="updateUsername" required>
+        New Email: <input type="email" id="updateEmail" required>
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <!-- Delete Account Form -->
+    <h2>Delete Account</h2>
+    <form id="deleteForm">
+        Username: <input type="text" id="deleteUsername" required>
+        <button type="submit">Delete Account</button>
+    </form>
+    <br>
+    <br>
+    <br>
+<script src="/Script/app.js"></script>
+
+<style>
+
+    h1, h2 {
+        color: #333;
+    }
+    form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    input, button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box; /* Includes padding in the width */
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!checkAuthentication()) {
+            window.location.href = 'login.html'; // Redirect to the login page if not authenticated
+        }
+    });
+
+    function checkAuthentication() {
+        const user = sessionStorage.getItem('user');
+        return !!user;
+    }
+</script>
+<footer class="bg-dark text-white mt-5 fixed-bottom"></footer>
+
+<!-- Scripting Section -->
+<script src="./Script/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>

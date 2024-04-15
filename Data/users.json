@@ -6,6 +6,11 @@
       "DisplayName" : "Admin",
       "EmailAddress" : "admin@example.com",
       "Password" : "00000"
+    },
+    {
+      "DisplayName" : "addan",
+      "EmailAddress" : "addanzahra2@gmail.com",
+      "Password" : "addan"
     }
   ]
 
